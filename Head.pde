@@ -25,19 +25,16 @@ class Head
         segmentID = int(map(angle, PI + radians(45/2), -PI + radians(45/2), 0, numSegments));
         
         // check to see if the mouse is inside the object
-        if (mouseX >= x - w/2 && mouseX <= x + w/2 &&
-            mouseY >= y - h/2 && mouseY <= y + h/2) {
+        if () {
             
             // set mouseOver to true
-            mOver = true;
+
 
             // set mouse pressed variable to internal Processing mousePressed variable
-            mPressed = mousePressed;
+
         }
         // else, set mouse pressed and mouse over to false
         else {
-            mOver = false;
-            mPressed = false;
         }
     }
     
