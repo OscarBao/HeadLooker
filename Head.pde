@@ -31,6 +31,8 @@ class Head
         // calculate the segment id based on the angle of the mouse position
         segmentID = int(map(angle, PI + radians(45/2), -PI + radians(45/2), 0, numSegments));
         
+        println(segmentID);
+        
         // check to see if the mouse is inside the object
         if (mouseX >= x - w/2 && mouseX <= x + w/2 &&
             mouseY >= y - h/2 && mouseY <= y + h/2) {
