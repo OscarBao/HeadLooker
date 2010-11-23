@@ -8,7 +8,7 @@ class Head
     int numSegments = 8; // number of segments
     boolean mOver = false; // mouse over boolean
     boolean mPressed = false; // mouse pressed boolean
-    
+     
     String id = "";
 
     // object constructor

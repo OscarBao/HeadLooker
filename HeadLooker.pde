@@ -22,7 +22,7 @@ void setup()
             heads[headid].w = width / numx;
             heads[headid].h = height / numy;
             headid++;
-        }
+        } 
     }
 }
 
