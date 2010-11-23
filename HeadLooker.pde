@@ -1,14 +1,15 @@
 // create new head variable
 Head[] heads;
 
-int numx = 4, numy = 4;
+int numx = 1, numy = 1;
 
 void setup() 
 {
-    size(500, 500);
+    size(400, 333);
     
     // instance new head array
     heads = new Head[numx * numy];
+    heads[0] = new Head("gd");
 
     // create heads array
     int headw = width / numx;
@@ -16,7 +17,10 @@ void setup()
     int headid = 0;
     for (int y = 0; y < numy; y++) {    
         for (int x = 0; x < numx; x++) {            
-            heads[headid] = new Head((x * headw) + headw / 2,  (y * heady) + heady / 2 , width / numx, height / numy);
+            heads[headid].x = (x * headw) + headw / 2;
+            heads[headid].y = (y * heady) + heady / 2;
+            heads[headid].w = width / numx;
+            heads[headid].h = height / numy;
             headid++;
         }
     }
